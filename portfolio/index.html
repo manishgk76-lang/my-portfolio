@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manish Vishwakarma</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #222;
+            padding: 15px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: white;
+            margin: 0;
+        }
+
+        nav div {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Header */
+        header {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Common Section */
+        section {
+            background-color: white;
+            margin: 25px auto;
+            padding: 30px;
+            max-width: 900px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-top: 0;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 8px;
+        }
+
+        /* About */
+        .about {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-box {
+            background-color: #eff6ff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 180px;
+        }
+
+        .about-box h3 {
+            margin: 5px;
+            color: #2563eb;
+        }
+
+        /* Skills - CSS Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: #f4f6f8;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .skill h3 {
+            color: #2563eb;
+        }
+
+        /* Projects - CSS Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        .project h3 {
+            color: #2563eb;
+        }
+
+        .project a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        /* Contact - Flexbox */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-links {
+            flex: 1;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .about {
+                flex-direction: column;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <h2>Manish</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Header -->
+    <header>
+
+        <h1>Manish Vishwakarma</h1>
+
+        <p>CS & AI Student | Java Learner | Web Developer</p>
+
+    </header>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <div class="about-text">
+
+                <p>
+                    Hi, I am Manish Vishwakarma.
+                    I am studying CS & AI at Scaler School of Technology.
+                </p>
+
+                <p>
+                    I enjoy learning programming, building websites
+                    and solving coding problems.
+                </p>
+
+            </div>
+
+            <div class="about-box">
+
+                <h3>CS & AI</h3>
+                <p>Student</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill">
+                <h3>Java</h3>
+                <p>Programming & Problem Solving</p>
+            </div>
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Building Web Pages</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Styling & Layout</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project">
+
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A simple personal portfolio website
+                    created using HTML and CSS.
+                </p>
+
+                <a href="#">View Project →</a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Java Practice</h3>
+
+                <p>
+                    I practice Java by solving programming
+                    and pattern problems.
+                </p>
+
+                <a href="#">View Project →</a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Learning how to create websites using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <a href="#">View Project →</a>
+
+            </div>
+
+
+            
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Get in Touch</h3>
+
+                <p>
+                    Feel free to contact me through email
+                    or social media.
+                </p>
+
+                <p>
+                    📍 Bengaluru
+                </p>
+
+                <p>
+                    📱 9250597037
+                </p>
+
+            </div>
+
+
+            <div class="contact-links">
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:manishgk76@gmail.com">
+                        manishgk76@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>GitHub:</strong><br>
+                    <a href="https://github.com/" target="_blank">
+                        My GitHub
+                    </a>
+                </p>
+
+                <p>
+                    <strong>LinkedIn:</strong><br>
+                    <a href="https://www.linkedin.com/in/manish-laddu/"
+                        target="_blank">
+                        My LinkedIn
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Manish Vishwakarma
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
